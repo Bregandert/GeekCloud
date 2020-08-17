@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.AuthController">
+
+   <AnchorPane prefHeight="35.0" prefWidth="443.0" GridPane.rowIndex="1">
+      <children>
+         <TextField fx:id="Login" layoutX="24.0" layoutY="5.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="138.0" promptText="login">
+            <effect>
+               <DropShadow />
+            </effect>
+         </TextField>
+         <TextField fx:id="Password" layoutX="185.0" layoutY="5.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="138.0" promptText="password">
+            <effect>
+               <DropShadow />
+            </effect>
+         </TextField>
+         <Button fx:id="Enter" layoutX="349.0" layoutY="5.0" mnemonicParsing="false" onAction="#pressOnEnterBtn" prefHeight="25.0" prefWidth="80.0" text="Войти">
+            <effect>
+               <DropShadow />
+            </effect>
+         </Button>
+      </children>
+   </AnchorPane>
+
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+</GridPane>
